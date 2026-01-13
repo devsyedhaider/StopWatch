@@ -82,3 +82,61 @@ body {
 .timebtns button:hover {
   background: #5f3258;
 }
+
+/*  Responsive */
+
+@media (max-width: 1024px) {
+  .timeContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeContainer {
+    width: 95%;
+    height: auto;
+    padding: 2.5rem;
+  }
+
+  .timeDisplay div p {
+    font-size: 4.5rem;
+  }
+
+  .timeDisplay div span {
+    font-size: 0.9rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeContainer {
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .timeDisplay {
+    gap: 0.5rem;
+  }
+
+  .timeDisplay div p {
+    font-size: 3rem;
+  }
+
+  .timeDisplay div span {
+    font-size: 0.8rem;
+    margin-left: 1.5rem;
+  }
+
+  .timebtns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .timebtns button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
