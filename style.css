@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #385c7f;
+  background: linear-gradient(
+    139deg,
+    rgba(56, 92, 127, 1) 0%,
+    rgba(120, 51, 114, 1) 50%,
+    rgba(78, 51, 127, 1) 100%
+  );
+}
+
+/* Time Container */
+
+.timeContainer {
+  width: 800px;
+  height: 350px;
+  background: #160a1c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* time Display */
+
+.timeDisplay {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeDisplay div {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeDisplay div p {
+  font-size: 6rem;
+  color: #e4e4e4;
+}
+
+.timeDisplay div span {
+  margin-left: 3rem;
+  color: #e4e4e4;
+}
+
+/* time btns */
+
+.timebtns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timebtns button {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  color: #fff;
+  background: #733e6c;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.timebtns button:hover {
+  background: #5f3258;
+}
